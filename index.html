@@ -10,41 +10,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
-    padding: 20px;
+    color: #333;
 }
 
 .container {
-    max-width: 900px;
+    width: 80%;
     margin: 0 auto;
-    background: white;
     padding: 20px;
+    background-color: white;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
     text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
 }
 
-header h1 {
-    font-size: 2.5em;
-    color: #333;
+.profile {
+    display: inline-block;
 }
 
-header p {
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+h3 {
     font-size: 1.2em;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
 }
 
 a {
-    color: #0275d8;
     text-decoration: none;
+    color: #1a73e8;
 }
 
 a:hover {
@@ -52,81 +73,70 @@ a:hover {
 }
 
 section {
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-h2 {
-    color: #333;
-    border-bottom: 2px solid #0275d8;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+p {
+    margin: 10px 0;
 }
-
-ul {
-    margin-left: 20px;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
-strong {
-    color: #0275d8;
-}
-
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Suchi Pambhar</h1>
-            <p>Ph no. +91 8160555563</p>
-            <p><a href="mailto:suchipambhar18@gmail.com">Gmail</a> | 
-            <a href="http://linkedin.com/in/suchi-pambhar-320256250">LinkedIn</a> | 
-            <a href="http://github.com/Suchi-Pambhar">GitHub</a></p>
+            <div class="profile">
+                <img src="Screenshot 2024-06-05 114303.png" alt="Suchi Pambhar" class="profile-pic">
+                <h1>Suchi Pambhar</h1>
+                <p>Ph no: +91 8160555563</p>
+                <p><a href="mailto:suchipambhar18@gmail.com">suchipambhar18@gmail.com</a> | 
+                   <a href="http://linkedin.com/in/suchi-pambhar-320256250">LinkedIn</a> | 
+                   <a href="http://github.com/Suchi-Pambhar">GitHub</a></p>
+            </div>
         </header>
 
         <section>
             <h2>Education</h2>
-            <p><strong>Bachelor of Technology in Computer Science</strong></p>
-            <p>SRM Institute of Science and Technology, Trichy (2022 - Present)</p>
-            <p>Expected Graduation: 2026</p>
-            <p>CGPA: 9.66 (Aggregate till date)</p>
+            <p><strong>Bachelor of Technology in Computer Science</strong><br>
+                SRM Institute of Science and Technology, Trichy (2022 - Present)<br>
+                CGPA: 9.66 (Aggregate till date)</p>
         </section>
 
         <section>
             <h2>Experience</h2>
-            <p><strong>React Training Internship</strong></p>
-            <p>Logistic Infotech, Rajkot (June - July 2024)</p>
+            <h3>React Training Internship - Logistic Infotech, Rajkot (June - July 2024)</h3>
             <ul>
-                <li>Developed and tested React components for various client projects.</li>
-                <li>Collaborated with the development team to integrate front-end solutions with backend APIs.</li>
+                <li>Built a Movie Database application using external APIs, incorporating features like movie search, filtering, and dynamic content updates.</li>
+                <li>Gained a strong understanding of React’s role in front-end development, including state management, hooks, and component architecture.</li>
             </ul>
         </section>
 
         <section>
             <h2>Projects</h2>
-            <p><strong>Content Management Tool</strong></p>
+            <h3>Content Management Tool</h3>
             <ul>
-                <li>Developed a tool for organizing and managing digital content using HTML, CSS, and JavaScript.</li>
-                <li>Created a responsive user interface for content creation, editing, and deletion.</li>
-                <li>Implemented features for categorizing and storing content for ease of management.</li>
+                <li>Developed a Content Management Tool for efficiently organizing and managing digital content.</li>
+                <li>Utilized HTML, CSS, and JavaScript to build an intuitive user interface for content creation, editing, and deletion.</li>
+                <li>Focused on user experience by creating a responsive design and streamlined navigation.</li>
             </ul>
-
-            <p><strong>Project Management Tool</strong></p>
+            <h3>Project Management Tool</h3>
             <ul>
-                <li>Built a web-based tool to streamline task allocation and progress tracking using HTML, CSS, and JavaScript.</li>
-                <li>Integrated real-time updates to enhance collaboration and task management.</li>
-                <li>Added features for due date management and progress monitoring.</li>
+                <li>Developed a web-based project management tool to streamline task allocation and progress tracking.</li>
+                <li>Implemented core features including task creation, assignment, due date management, and progress monitoring.</li>
             </ul>
         </section>
 
         <section>
-            <h2>Skills Summary</h2>
+            <h2>Research</h2>
+            <h3>Smart Parking Solution for Urban Development</h3>
+            <p>A smart parking solution using IoT technology and a mobile application to optimize parking operations.</p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
             <ul>
-                <li><strong>Programming Languages:</strong> Java (Intermediate), Python (Basic), C (Intermediate), C++ (Basic)</li>
-                <li><strong>Web Technologies:</strong> HTML (Intermediate), CSS (Basic), JavaScript (Basic), PHP (Basic)</li>
-                <li><strong>Tools:</strong> React, Git, Hackerrank, EFSET</li>
+                <li>Programming Languages: Java (Intermediate), Python (Basic), C (Intermediate), C++ (Basic)</li>
+                <li>Web Technologies: HTML (Intermediate), CSS (Basic), JavaScript (Basic), PHP (Basic)</li>
+                <li>Tools: React, Git, Hackerrank</li>
             </ul>
         </section>
 
@@ -134,7 +144,7 @@ strong {
             <h2>Certifications</h2>
             <ul>
                 <li>Spanish A1 Certification - Inlingua, Chennai</li>
-                <li>EFSET Certification (C2 Proficient) - Issued: Sept 2022</li>
+                <li>EFSET Certification (C2 Proficient)</li>
                 <li>Java (Basic) - Hackerrank</li>
                 <li>Python (Basic) - Hackerrank</li>
                 <li>CSS (Basic) - Hackerrank</li>
